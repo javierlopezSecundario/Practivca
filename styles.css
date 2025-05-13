@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #051122;
+    font-family: sans-serif;
+}
+
+header {
+    height: 500px;
+    background-image: url(img/imagen-header.jpg);
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+header::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to top, #000, transparent, 90%, #000);
+}
+
+img[src="img/logo-cinesa-blanco.webp"] {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+img[src="img/icono-ubicacion.png"] {
+    margin-right: 20px;
+}
+
+img[src="img/icono-ubicacion.png"], img[src="img/icono-buscador.png"] {
+    width: 30px;
+}
