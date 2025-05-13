@@ -2,8 +2,10 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #051122;
-    font-family: sans-serif;
+    font-family: NunitoSans,Helvetica,Arial,sans-serif;
 }
+
+/* ----------------------- SECION HEADER ------------------------ */
 
 header {
     height: 500px;
@@ -48,10 +50,15 @@ nav ul li {
     list-style: none;
 }
 
+nav ul li:nth-child(6) {
+    margin-right: 20px;
+}
+
 nav ul li a {
     padding: 15px;
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
 }
 
 img[src="img/icono-ubicacion.png"] {
@@ -61,3 +68,28 @@ img[src="img/icono-ubicacion.png"] {
 img[src="img/icono-ubicacion.png"], img[src="img/icono-buscador.png"] {
     width: 30px;
 }
+
+header > div {
+    height: calc(500px - 73px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+#link-video {
+    background-color: #0068c8;
+    padding: 30px;
+    clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+}
+
+.triangulo-blanco {
+    background-color: #fff;
+    padding: 15px;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+/* ----------------------- SECION MAIN ------------------------ */
+
+
