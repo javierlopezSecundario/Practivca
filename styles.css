@@ -92,4 +92,7 @@ header > div {
 
 /* ----------------------- SECION MAIN ------------------------ */
 
-
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
